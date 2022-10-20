@@ -1,7 +1,9 @@
 header {
 
     padding-top: 50px;
-    padding-left: 20px;
+
+    flex-direction: column;
+    display: flex;
 
     &:before {
         -webkit-animation: header-appear 1s both;
@@ -10,12 +12,16 @@ header {
         content: "";
         display: block;
         position: absolute;
-        top: 100px;
+        top: 0px;
         left: 0;
         width: 100%;
         margin-top: -50%;
         padding-top: 100%;
         z-index: -1;
+    }
+
+    .header__logo {
+        width: 150px;
     }
 
     h1 {
@@ -26,5 +32,170 @@ header {
     .title {
 
         color: $color-5;
+    }
+
+    .header__background__container {
+        position: relative;
+        cursor: pointer;
+
+        margin: auto;
+        width: 400px;
+        height: 60vh;
+
+        &.animated {
+
+            animation: atom-rotate 10s cubic-bezier(.98, 0, 1, .53) 1 forwards;
+        }
+
+        &.hidden {
+            display: none;
+        }
+
+        .core {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+            z-index: 10;
+            background-color: $color-3;
+
+            &.animated {
+                animation: core-scale 1s infinite cubic-bezier(0, .75, .08, 1) alternate, core-explosion 10s infinite linear;
+            }
+
+
+        }
+
+        .orbit {
+            position: absolute;
+            z-index: 10;
+            width: 100px;
+            height: 300px;
+
+            transform-origin: center;
+            left: 50%;
+            top: 50%;
+            border: 10px solid rgba(255, 255, 255, 0.144);
+
+            border-radius: 50%;
+            transform: translate(-50%, -50%) rotate(33deg);
+
+            .electron {
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background-color: rgba(255, 255, 255, 0);
+                position: absolute;
+                left: -10px;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                animation: electron-x-axis 6s infinite linear;
+
+                &:after {
+                    content: '';
+                    display: block;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    transform: translate(-50%, -50%);
+                    background-color: $color-3;
+                    animation: electron-y-axis 6s infinite;
+                }
+            }
+
+            &:nth-child(2) {
+                transform: translate(-50%, -50%)rotate(-33deg);
+
+                .electron {
+
+                    animation: electron-x-axis 4s infinite linear;
+
+                    &:after {
+
+                        animation: electron-y-axis 4s infinite;
+                    }
+                }
+            }
+
+            &:nth-child(3) {
+                transform: translate(-50%, -50%)rotate(90deg);
+
+                .electron {
+
+                    animation: electron-x-axis 2s infinite linear;
+
+                    &:after {
+
+                        animation: electron-y-axis 2s infinite;
+                    }
+                }
+            }
+
+        }
+    }
+
+    .header__background__postAnim {
+        position: relative;
+
+        overflow-y: visible;
+        width: 100%;
+        height: 60vh;
+
+
+        .orbitPostAnim {
+
+            position: absolute;
+            z-index: 2;
+            width: 200px;
+            height: 600px;
+
+            transform-origin: center;
+            left: 25%;
+            top: 50%;
+            border: 20px solid rgba(255, 255, 255, 0.027);
+
+            border-radius: 50%;
+            transform: translate(-50%, -50%) rotate(33deg);
+
+
+
+            &:nth-child(2) {
+                transform: translate(-50%, -50%)rotate(-33deg);
+
+
+            }
+
+            &:nth-child(3) {
+                transform: translate(-50%, -50%)rotate(90deg);
+
+
+            }
+
+        }
+
+        .text__reveal {
+            color: $color-font-light;
+            position: absolute;
+            bottom: 140px;
+            right: 0;
+
+            strong {
+                color: $color-3
+            }
+
+            @include text-reveal;
+
+            &.second {
+                bottom: 100px;
+                right: 0;
+                text-align: right;
+
+
+            }
+        }
+
     }
 }

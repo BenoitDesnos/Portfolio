@@ -11,7 +11,7 @@ sans-serif;
 
 //maps
 $font-size: (basic: 12px,
-    size1: 28px,
+    size1: 26px,
     size2: 20px,
     size3: 16px,
     paragraph: 12px,
@@ -25,6 +25,7 @@ $color-2: #564D80;
 $color-3: #C2F970;
 $color-4:#D3FCD5;
 $color-5: #98A6D4;
+$color-5: #737c9b;
 $color-bg-dark: #0c0b0d;
 $color-bg-light: #E2E8DD;
 $color-font-dark: black;
@@ -52,7 +53,7 @@ html {
 
 body {
     height: auto;
-    width: 100%;
+    max-width: 100%;
     overflow-x: hidden;
     margin: auto;
     background-color: $color-bg-dark;
@@ -60,7 +61,11 @@ body {
 
 main {
     position: relative;
+    overflow: hidden;
     height: auto;
+    width: 100%;
+    padding-left: $small-gap *0.8;
+    padding-right: $small-gap *0.8;
 }
 
 a {
