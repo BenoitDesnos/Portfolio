@@ -1,0 +1,68 @@
+@font-face {
+    font-family: "font-1";
+    src: url(../../assets/fonts/playfairdisplay-black-webfont.woff) format('woff'), url(../../assets/fonts/playfairdisplay-black-webfont.woff2) format('woff2');
+}
+
+
+
+$font-1: "font-1",
+sans-serif;
+
+
+//maps
+$font-size: (basic: 12px,
+    size1: 28px,
+    size2: 20px,
+    size3: 16px,
+    paragraph: 12px,
+);
+$breakpoints: (mobile: 576px,
+    tablet: 888px,
+);
+/*  -------------------- colors ---------------------- */
+$color-1: #44344F;
+$color-2: #564D80;
+$color-3: #C2F970;
+$color-4:#D3FCD5;
+$color-5: #98A6D4;
+$color-bg-dark: #0c0b0d;
+$color-bg-light: #E2E8DD;
+$color-font-dark: black;
+$color-font-light: white;
+/*  -------------------- gaps ---------------------- */
+$large-gap: 60px;
+$medium-gap: 30px;
+$small-gap: 15px;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    outline: none;
+    border: none;
+    text-decoration: none;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: auto;
+    width: 100%;
+    overflow-x: hidden;
+    margin: auto;
+    background-color: $color-bg-dark;
+}
+
+main {
+    position: relative;
+    height: auto;
+}
+
+a {
+    color: $color-font-dark;
+}

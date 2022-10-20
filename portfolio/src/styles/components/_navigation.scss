@@ -1,0 +1,103 @@
+.nav {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+    .nav__active {
+        color: $color-2;
+    }
+
+    .nav__toggle {
+        position: absolute;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background-color: $color-bg-light;
+        bottom: 0;
+        right: 0;
+        z-index: 2;
+
+
+        .dots {
+            position: absolute;
+            height: 0.25rem;
+            width: 0.25rem;
+            background-color: $color-bg-dark;
+            border-radius: 50%;
+            left: 50%;
+            top: 50%;
+            -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+            transition: all 200ms;
+
+            &:before {
+                transition: all 200ms;
+                @include dots;
+                top: 10px;
+            }
+
+            &:after {
+                transition: all 200ms;
+                @include dots;
+                bottom: 10px;
+
+            }
+
+            &.is-active {
+                width: 1.90rem;
+                border-radius: 3px;
+                height: 0.20rem;
+                background-color: transparent;
+
+
+                &:before {
+
+
+                    top: 0px;
+                    transform: rotate(-45deg);
+
+                }
+
+                &:after {
+
+                    bottom: 0px;
+                    transform: rotate(45deg);
+
+
+
+
+                }
+            }
+        }
+    }
+
+    .nav__menu {
+        background-color: $color-bg-light;
+        width: 100%;
+        max-width: 17.5rem;
+        min-width: 15.5rem;
+        overflow: hidden;
+        overflow-y: auto;
+        transform: scale(0);
+        transform-origin: right bottom;
+        z-index: 1;
+        transition: opacity 250ms, transform 250ms, -webkit-transform 250ms;
+        border-radius: 0.5rem;
+
+        &.is-active {
+            transform: scale(1);
+            opacity: 1;
+
+        }
+
+        li {
+            font-size: 20px;
+            line-height: 1.2;
+            padding: 0.75rem;
+            border-bottom: 1px rgba(0, 0, 0, 0.096) solid;
+
+
+        }
+    }
+
+}

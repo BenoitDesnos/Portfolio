@@ -1,0 +1,30 @@
+header {
+
+    padding-top: 50px;
+    padding-left: 20px;
+
+    &:before {
+        -webkit-animation: header-appear 1s both;
+        animation: header-appear 1s both;
+        background-image: radial-gradient(circle closest-side, #39383D, $color-bg-dark);
+        content: "";
+        display: block;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        margin-top: -50%;
+        padding-top: 100%;
+        z-index: -1;
+    }
+
+    h1 {
+        color: $color-font-light;
+        margin-top: $large-gap;
+    }
+
+    .title {
+
+        color: $color-5;
+    }
+}

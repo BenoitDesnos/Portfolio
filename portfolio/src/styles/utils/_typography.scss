@@ -1,0 +1,6 @@
+h1,
+.size1 {
+    font-size: map-get($font-size, size1);
+    font-weight: 800;
+    font-family: $font-1;
+}
