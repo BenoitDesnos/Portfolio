@@ -1,5 +1,5 @@
 import Navigation from "../components/Navigation";
-import logo from "../assets/img/logoPurple.png";
+import logo from "../assets/img/logo.svg";
 import { useState } from "react";
 
 function Home() {
@@ -8,13 +8,18 @@ function Home() {
   const handleClick = () => {
     alert("Are you sure you want to mess with that atom?");
     setAnimated(() => 1);
+    setTimeout(() => {
+      setAnimated(() => 2);
+    }, 10000);
   };
   return (
     <main>
-      <header>
+      <header className="header">
         <img src={logo} alt="BENDES logo" className="header__logo" />
-        <h1>Front-End Developper</h1>
-        <span className="title size1">Looking for opportunities</span>
+        <div className="header__title">
+          <h1>Front-End Developper</h1>
+          <span className="size1">Looking for opportunities</span>
+        </div>
         <div
           className={
             animated === 1
@@ -24,7 +29,6 @@ function Home() {
               : "header__background__container"
           }
           onClick={handleClick}
-          onAnimationEnd={() => setAnimated(() => 2)}
         >
           <div className={animated ? "core animated" : "core"}></div>
           <div className="orbit">
@@ -38,13 +42,19 @@ function Home() {
           </div>
         </div>
 
-        <div className="header__background__postAnim">
+        <div
+          className={
+            animated === 2
+              ? "header__background__postAnim"
+              : "header__background__postAnim hidden"
+          }
+        >
           <div className="orbitPostAnim"></div>
           <div className="orbitPostAnim"></div>
           <div className="orbitPostAnim"></div>
           <div
             className={
-              animated === 2 ? "text__reveal  reveal" : "text__reveal  "
+              animated === 2 ? "text__hidden reveal" : "text__hidden  "
             }
           >
             <p>Oh no it's broken !</p>
@@ -52,8 +62,8 @@ function Home() {
           <div
             className={
               animated === 2
-                ? "text__reveal second reveal"
-                : "text__reveal second "
+                ? "text__hidden second reveal "
+                : "text__hidden second "
             }
           >
             <p>

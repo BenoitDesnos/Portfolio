@@ -15,16 +15,19 @@
     z-index: 5;
     overflow: hidden;
 
+
     p {
         transform: translateY(40px) rotate(20deg);
         transform-origin: left;
+
 
     }
 
     &.reveal {
         p {
             transform: translateY(0px) rotate(0deg);
-            transition: all 1s;
+            transition: transform 1000ms 500ms;
+
         }
     }
 
@@ -32,7 +35,12 @@
 
         p {
 
-            transition: all 1s 2s;
+            transition: transform 1000ms 2000ms;
         }
     }
+}
+
+@mixin nav-position {
+    bottom: 20px;
+    right: 20px;
 }

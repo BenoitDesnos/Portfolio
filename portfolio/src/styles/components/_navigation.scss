@@ -1,75 +1,84 @@
-.nav {
+.nav__toggle {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
 
-    .nav__active {
-        color: $color-2;
-    }
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: $color-bg-light;
+    @include nav-position;
+    z-index: 11;
 
-    .nav__toggle {
+
+    .dots {
         position: absolute;
-        width: 45px;
-        height: 45px;
+        height: 0.25rem;
+        width: 0.25rem;
+        background-color: $color-bg-dark;
         border-radius: 50%;
-        background-color: $color-bg-light;
-        bottom: 0;
-        right: 0;
-        z-index: 2;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+        transition: all 200ms;
 
-
-        .dots {
-            position: absolute;
-            height: 0.25rem;
-            width: 0.25rem;
-            background-color: $color-bg-dark;
-            border-radius: 50%;
-            left: 50%;
-            top: 50%;
-            -webkit-transform: translateX(-50%) translateY(-50%);
-            transform: translateX(-50%) translateY(-50%);
+        &:before {
             transition: all 200ms;
+            @include dots;
+            top: 10px;
+        }
+
+        &:after {
+            transition: all 200ms;
+            @include dots;
+            bottom: 10px;
+
+        }
+
+        &.is-active {
+            width: 1.90rem;
+            border-radius: 3px;
+            height: 0.20rem;
+            background-color: transparent;
+
 
             &:before {
-                transition: all 200ms;
-                @include dots;
-                top: 10px;
+
+
+                top: 0px;
+                transform: rotate(-45deg);
+
             }
 
             &:after {
-                transition: all 200ms;
-                @include dots;
-                bottom: 10px;
 
-            }
-
-            &.is-active {
-                width: 1.90rem;
-                border-radius: 3px;
-                height: 0.20rem;
-                background-color: transparent;
-
-
-                &:before {
-
-
-                    top: 0px;
-                    transform: rotate(-45deg);
-
-                }
-
-                &:after {
-
-                    bottom: 0px;
-                    transform: rotate(45deg);
+                bottom: 0px;
+                transform: rotate(45deg);
 
 
 
 
-                }
             }
         }
     }
+}
+
+.nav {
+    position: fixed;
+    @include nav-position;
+
+    z-index: 10;
+
+    &.hidden {
+        z-index: -1;
+        transition: z-index 2s;
+    }
+
+    .nav__active {
+        color: darken($color: $color-3, $amount: 50%);
+        font-weight: 900;
+    }
+
+
 
     .nav__menu {
         background-color: $color-bg-light;
@@ -80,7 +89,7 @@
         overflow-y: auto;
         transform: scale(0);
         transform-origin: right bottom;
-        z-index: 1;
+        z-index: 10;
         transition: opacity 250ms, transform 250ms, -webkit-transform 250ms;
         border-radius: 0.5rem;
 
