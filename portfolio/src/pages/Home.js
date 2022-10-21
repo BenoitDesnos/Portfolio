@@ -1,17 +1,8 @@
 import Navigation from "../components/Navigation";
+import HeaderAnim from "../components/headerAnim";
 import logo from "../assets/img/logo.svg";
-import { useState } from "react";
 
 function Home() {
-  const [animated, setAnimated] = useState(0);
-
-  const handleClick = () => {
-    alert("Are you sure you want to mess with that atom?");
-    setAnimated(() => 1);
-    setTimeout(() => {
-      setAnimated(() => 2);
-    }, 10000);
-  };
   return (
     <main>
       <header className="header">
@@ -20,57 +11,7 @@ function Home() {
           <h1>Front-End Developper</h1>
           <span className="size1">Looking for opportunities</span>
         </div>
-        <div
-          className={
-            animated === 1
-              ? "header__background__container animated"
-              : animated === 2
-              ? "header__background__container hidden"
-              : "header__background__container"
-          }
-          onClick={handleClick}
-        >
-          <div className={animated ? "core animated" : "core"}></div>
-          <div className="orbit">
-            <div className="electron"></div>
-          </div>
-          <div className="orbit">
-            <div className="electron"></div>
-          </div>
-          <div className="orbit">
-            <div className="electron"></div>
-          </div>
-        </div>
-
-        <div
-          className={
-            animated === 2
-              ? "header__background__postAnim"
-              : "header__background__postAnim hidden"
-          }
-        >
-          <div className="orbitPostAnim"></div>
-          <div className="orbitPostAnim"></div>
-          <div className="orbitPostAnim"></div>
-          <div
-            className={
-              animated === 2 ? "text__hidden reveal" : "text__hidden  "
-            }
-          >
-            <p>Oh no it's broken !</p>
-          </div>
-          <div
-            className={
-              animated === 2
-                ? "text__hidden second reveal "
-                : "text__hidden second "
-            }
-          >
-            <p>
-              Dont worry, we have the <strong>REACT</strong> developper for it.
-            </p>
-          </div>
-        </div>
+        <HeaderAnim />
       </header>
       <Navigation />
     </main>

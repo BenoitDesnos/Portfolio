@@ -1,6 +1,6 @@
 .nav__toggle {
     position: fixed;
-
+    cursor: pointer;
     width: 45px;
     height: 45px;
     border-radius: 50%;
@@ -81,6 +81,7 @@
 
 
     .nav__menu {
+
         background-color: $color-bg-light;
         width: 100%;
         max-width: 17.5rem;
