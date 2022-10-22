@@ -1,0 +1,28 @@
+[
+    {
+      "header": "Personnalité",
+      "description":
+        "De part mon expérience conséquente dans la gestion des relations humaines et mon esprit rationnel, je suis en capacité de mener tout projets à son terme.  Mes compétences humaines alliées à ma technicité feront de moi un très bon élément au sein de votre projet/entreprise",
+        "images": null
+    },
+    {
+      "header": "Expertise",
+      "description":
+        "Spécialisé dans le développement front end, je dispose du socle de compétences HTML,CSS et Javascript classique. J'utilise la bibliothèque React ainsi que le pré-processeur Sass en priorité.",
+        "images": null
+    },
+    {
+      "header": "Préférences",
+      "description":
+        " La résolution de problématiques etant la raison même de mon attrait pour le developpement, mon appetence et préférence se situe donc évidemment dans l'écriture de fonctions appliquées a des problématiques particulières.",
+        "images": null
+    },
+    {
+      "header": "Technicité",
+      "description":
+        "Au dela de mon expertise je peux ausis travailler avec differentes technologies",
+        "images": [
+
+        ]
+    }
+  ]
