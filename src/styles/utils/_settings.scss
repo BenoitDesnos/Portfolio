@@ -24,8 +24,8 @@ $color-1: #44344F;
 $color-2: #00d8ff;
 $color-3: #ff8800;
 $color-4:#D3FCD5;
-$color-5: #98A6D4;
-$color-5: #737c9b;
+$color-5: #ff4800;
+
 $color-bg-dark: #0c0b0d;
 $color-bg-light: #E2E8DD;
 $color-font-dark: black;
@@ -44,6 +44,7 @@ $small-gap: 15px;
     outline: none;
     border: none;
     text-decoration: none;
+    color: $color-font-light;
 
 }
 

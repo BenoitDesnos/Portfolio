@@ -42,7 +42,7 @@ function Navigation() {
                 nav.isActive ? "nav__active hover size3" : "hover size3"
               }
             >
-              Mes Joindre
+              Me Joindre
             </NavLink>
           </li>
         </ul>

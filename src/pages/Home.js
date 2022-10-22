@@ -1,6 +1,8 @@
 import Navigation from "../components/Navigation";
-import HeaderAnim from "../components/headerAnim";
+import HeaderAnim from "../components/HeaderAnim";
 import logo from "../assets/img/logo.svg";
+import Skills from "../components/Skills";
+import Projects from "../components/Projects";
 
 function Home() {
   return (
@@ -13,6 +15,8 @@ function Home() {
         </div>
         <HeaderAnim />
       </header>
+      <Skills />
+      <Projects />
       <Navigation />
     </main>
   );
