@@ -6,26 +6,75 @@
     position: relative;
     padding-left: $small-gap *0.8;
     padding-right: $small-gap *0.8;
+    padding-bottom: 10px;
     margin-bottom: $large-gap;
+
+    &::-webkit-scrollbar {
+        height: 7px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+        background: $color-bg-dark;
+        margin-top: 10px;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+        background: $color-5;
+        border-radius: 20px;
+
+    }
+
+    @media screen and (min-width: map-get($breakpoints, mobile)) {
+        flex-wrap: wrap;
+        width: 100%;
+        max-width: 550px;
+        margin: auto;
+        overflow: hidden;
+    }
+
 
 
 
     .projects__item {
         display: flex;
         flex: 1 0 auto;
+        min-height: 400px;
         flex-direction: column;
-        width: 90%;
-        margin: auto;
+        width: 95%;
+        min-height: 450px;
+
         overflow: hidden;
         background-color: lighten($color-2, 47%);
-        border-radius: 15px;
+        border-radius: 10px;
         margin-right: $small-gap;
+
+        @media screen and (min-width: map-get($breakpoints, mobile)) {
+            margin-bottom: $large-gap;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
 
 
 
         .projects__item__background {
-            object-fit: contain;
             width: 100%;
+            height: 300px;
+
+            @media screen and (min-width: map-get($breakpoints, mobile)) {
+                margin-bottom: $medium-gap;
+                height: auto;
+
+            }
+
+            img {
+
+
+                width: 100%;
+                height: 100%;
+            }
         }
 
         .projects__item__text {
@@ -38,9 +87,11 @@
 
             margin: auto;
 
+
+
             .projects__item__header {
                 color: $color-5;
-                font-size: map-get($font-size, size2) *1.2;
+
                 margin-bottom: 10px;
             }
 
@@ -48,6 +99,7 @@
                 width: 100%;
                 display: flex;
                 flex-wrap: wrap;
+
 
                 .projects__item__tag {
                     display: block;
@@ -57,6 +109,12 @@
                     padding: 2px 10px 2px 10px;
                     margin-right: 10px;
                     margin-bottom: 5px;
+                    white-space: nowrap;
+                    font-size: 14px;
+
+                    @media screen and (min-width: map-get($breakpoints, mobile)) {
+                        font-size: 18px;
+                    }
                 }
             }
 
@@ -74,15 +132,25 @@
                 width: 40px;
                 height: 40px;
                 border-radius: 100%;
-                margin-right: 5px;
+                margin-right: 20px;
                 float: left;
                 margin-top: $small-gap;
                 margin-bottom: $small-gap;
+                cursor: pointer;
+
+                @media screen and (min-width: map-get($breakpoints, mobile)) {
+                    width: 55px;
+                    height: 55px;
+                }
 
                 i {
                     font-size: 20px;
                     color: $color-font-light;
                     background-color: transparent;
+
+                    @media screen and (min-width: map-get($breakpoints, mobile)) {
+                        font-size: 25px;
+                    }
 
                 }
 

@@ -6,6 +6,11 @@
     flex-direction: column;
     display: flex;
 
+    @media screen and (min-width: map-get($breakpoints, mobile)) {
+        margin: auto;
+        width: 70%;
+    }
+
 
     &:before {
         -webkit-animation: header-appear 1s both;

@@ -51,6 +51,7 @@ function Navigation() {
             <a
               href="#1"
               className={isActive1 ? "nav__active hover size3" : "hover size3"}
+              onClick={() => setIsOpen(false)}
             >
               Me découvrir
             </a>
@@ -59,6 +60,7 @@ function Navigation() {
             <a
               href="#2"
               className={isActive2 ? "nav__active hover size3" : "hover size3"}
+              onClick={() => setIsOpen(false)}
             >
               Mes projets
             </a>
@@ -67,6 +69,7 @@ function Navigation() {
             <a
               href="#3"
               className={isActive3 ? "nav__active hover size3" : "hover size3"}
+              onClick={() => setIsOpen(false)}
             >
               Me Joindre
             </a>

@@ -5,6 +5,7 @@ import Skills from "../components/Skills";
 import Projects from "../components/Projects";
 import { useRef } from "react";
 import Contacts from "../components/Contacts";
+import Footer from "../components/Footer";
 
 function Home() {
   const skills = useRef(null);
@@ -27,6 +28,7 @@ function Home() {
       <Skills />
       <Projects skills={skills} />
       <Contacts />
+      <Footer logo={logo} />
       <Navigation handleClick={handleClick} />
     </main>
   );

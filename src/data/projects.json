@@ -12,7 +12,7 @@
     {
       "header": "Terra-med",
       "background": "/assets/images/terramed.png",
-      "tags": ["Pro", "React", "En production"],
+      "tags": ["Pro", "En production","React" ],
       "description":
         "Projet pro pour une entreprise de kinésithérapie située dans les pyrénées orientales.",
         "links": ["https://github.com/BenoitDesnos/Kine", "https://terramed.netlify.app/" ]
@@ -21,7 +21,7 @@
     {
       "header": "Crazy joe",
       "background": "/assets/images/Crazy-joe.png",
-      "tags": ["School", "Javascript", "Canva", "desktop"],
+      "tags": ["Perso", "Javascript", "Canva", "Desktop"],
       "description":
         "Projet perso, jeu 2d de course de voiture, pouvez-vous battre mon score? Only desktop",
         "links": ["https://github.com/BenoitDesnos/Crazy-Joe", "https://app.netlify.com/sites/crazyjoe/settings/general" ]

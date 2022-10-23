@@ -9,9 +9,11 @@
     align-items: center;
     width: 100%;
 
+    @media screen and (min-width: map-get($breakpoints, mobile)) {
+        width: 60%;
+        margin: $large-gap auto $large-gap auto;
 
-
-
+    }
 
 
     .contacts__info {
@@ -20,10 +22,6 @@
         flex-direction: column;
         position: relative;
         width: 90%;
-
-
-
-
 
         .grid__info {
             border-bottom: 1px solid black;

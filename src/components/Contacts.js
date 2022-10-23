@@ -48,10 +48,10 @@ function Contacts() {
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3645.7297424632397!2d3.864952215776109!3d43.596238664129714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b6afb49de74f51%3A0x1e64d83a685b07cb!2s114%20Rue%20Guillaume%20Janvier%2C%2034070%20Montpellier!5e1!3m2!1sfr!2sfr!4v1666542376223!5m2!1sfr!2sfr"
           width="600"
           height="450"
-          style={{ style: "border:0;" }}
+          style={{ style: "border:0" }}
           allowFullScreen=""
           loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
+          referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
       <div className="contacts__form">

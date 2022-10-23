@@ -4,11 +4,16 @@
     opacity: 0;
     animation: fade-down ease-out 1500ms 1000ms forwards, float ease-in-out 4s 2500ms infinite alternate;
     overflow-y: visible;
-
-
     margin: auto;
     width: 400px;
-    height: 50vh;
+    height: 60vh;
+
+    @media screen and (min-width: map-get($breakpoints, mobile)) {
+        width: 200px;
+        height: 600px;
+    }
+
+
 
     &.animated {
         opacity: 1;
@@ -51,6 +56,8 @@
 
         border-radius: 50%;
         transform: translate(-50%, -50%) rotate(33deg);
+
+
 
         .electron {
             width: 10px;
@@ -111,7 +118,7 @@
 
     overflow-y: visible;
     width: 100%;
-    height: 50vh;
+    height: 60vh;
     position: relative;
 
     &.hidden {
