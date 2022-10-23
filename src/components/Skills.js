@@ -1,7 +1,7 @@
 import aboutData from "../data/about.json";
-function Skills() {
+function Skills({ ref }) {
   return (
-    <ul className="about">
+    <ul className="about" id="1" ref={ref}>
       {aboutData.map((element) => (
         <li key={element.header} className="about__item">
           <img
@@ -14,6 +14,7 @@ function Skills() {
           {element.images &&
             element.images.map((image) => (
               <img
+                key={image}
                 src={image}
                 className="about__item__images"
                 alt="compétences"

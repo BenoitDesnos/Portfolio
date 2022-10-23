@@ -1,8 +1,8 @@
 .projects {
     overflow: scroll;
     overflow-y: visible;
-    display: block;
-    white-space: nowrap;
+    display: flex;
+    flex-wrap: nowrap;
     position: relative;
     padding-left: $small-gap *0.8;
     padding-right: $small-gap *0.8;
@@ -11,14 +11,16 @@
 
 
     .projects__item {
-        display: inline-block;
+        display: flex;
+        flex: 1 0 auto;
+        flex-direction: column;
         width: 90%;
         margin: auto;
         overflow: hidden;
         background-color: lighten($color-2, 47%);
         border-radius: 15px;
         margin-right: $small-gap;
-        min-height: 420px;
+
 
 
         .projects__item__background {

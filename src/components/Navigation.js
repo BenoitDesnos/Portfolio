@@ -1,8 +1,41 @@
-import { NavLink } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isActive1, setIsActive1] = useState(false);
+  const [isActive2, setIsActive2] = useState(false);
+  const [isActive3, setIsActive3] = useState(false);
+
+  function handleScroll() {
+    const menu2 = document.getElementById("2");
+    const menu3 = document.getElementById("3");
+
+    if (menu2.getBoundingClientRect().top >= 5) {
+      setIsActive1(true);
+      setIsActive2(false);
+    } else if (
+      menu2.getBoundingClientRect().top < 5 &&
+      menu3.getBoundingClientRect().top >= 5
+    ) {
+      setIsActive1(false);
+      setIsActive2(true);
+      setIsActive3(false);
+    } else if (menu3.getBoundingClientRect().top < 5) {
+      setIsActive2(false);
+      setIsActive3(true);
+    } else {
+      setIsActive1(false);
+      setIsActive2(false);
+      setIsActive3(false);
+    }
+  }
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <>
@@ -15,35 +48,28 @@ function Navigation() {
       <nav className={isOpen ? "nav" : "nav hidden"}>
         <ul className={isOpen ? "nav__menu is-active" : "nav__menu"}>
           <li>
-            <NavLink
-              to="/"
-              end
-              className={(nav) =>
-                nav.isActive ? "nav__active hover size3" : "hover size3"
-              }
+            <a
+              href="#1"
+              className={isActive1 ? "nav__active hover size3" : "hover size3"}
             >
               Me découvrir
-            </NavLink>
+            </a>
           </li>
           <li>
-            <NavLink
-              to="/b"
-              className={(nav) =>
-                nav.isActive ? "nav__active hover size3" : "hover size3"
-              }
+            <a
+              href="#2"
+              className={isActive2 ? "nav__active hover size3" : "hover size3"}
             >
               Mes projets
-            </NavLink>
+            </a>
           </li>
           <li>
-            <NavLink
-              to="/b"
-              className={(nav) =>
-                nav.isActive ? "nav__active hover size3" : "hover size3"
-              }
+            <a
+              href="#3"
+              className={isActive3 ? "nav__active hover size3" : "hover size3"}
             >
               Me Joindre
-            </NavLink>
+            </a>
           </li>
         </ul>
       </nav>

@@ -1,7 +1,7 @@
 import projectsData from "../data/projects.json";
-function Projects() {
+function Projects({ skills }) {
   return (
-    <ul className="projects">
+    <ul className="projects" id="2" skills={skills}>
       {projectsData.map((element) => (
         <li key={element.header} className="projects__item">
           <img
@@ -12,24 +12,26 @@ function Projects() {
           <div className="projects__item__text">
             <h3 className="projects__item__header">{element.header}</h3>
             <div className="projects__item__tags">
-              {element.tags.map((tag) => (
-                <span className="projects__item__tag">{tag}</span>
+              {element.tags.map((tag, index) => (
+                <span key={tag + index} className="projects__item__tag">
+                  {tag}
+                </span>
               ))}
             </div>
             <p className="projects__item__description">{element.description}</p>
             <div className="project__items__links">
               {element.links.map((link) => (
-                <a href={link} className="projects__item__link">
+                <div key={link} className="projects__item__link">
                   {link.includes("github.com") ? (
                     <a href={link}>
-                      <i class="fa-brands fa-github"></i>
+                      <i className="fa-brands fa-github"></i>
                     </a>
                   ) : (
                     <a href={link}>
-                      <i class="fa-solid fa-link"></i>
+                      <i className="fa-solid fa-link"></i>
                     </a>
                   )}
-                </a>
+                </div>
               ))}
             </div>
           </div>

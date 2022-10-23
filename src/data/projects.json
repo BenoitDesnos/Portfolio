@@ -5,7 +5,7 @@
       "background": "/assets/images/kasa.png",
       "tags": ["School", "React"],
       "description":
-        "Création d'une API sécurisée pour une application d'avis gastronomiques",
+        "Création from scratch du font-end d'une plateform de réservation de chambres à des particuliers, maquette à l'appui.",
         "links": ["https://github.com/BenoitDesnos/projet7_OC", "https://projet7opcl.netlify.app" ]
 
     },
@@ -50,7 +50,7 @@
       "background": "/assets/images/piquante.png",
       "tags": ["School", "Express", "node.js", "mongoDB", "mongoose"],
       "description":
-        "Création from scratch d'une plateform de réservation de chambres à des particuliers",
+        "Création d'une API sécurisée pour une application d'avis gastronomiques",
         "links": ["https://github.com/BenoitDesnos/projet6_OC"  ]
 
     }
