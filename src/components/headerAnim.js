@@ -1,6 +1,7 @@
+
 import { useState } from "react";
 
-function Home() {
+function HeaderAnim() {
   const [animated, setAnimated] = useState(0);
 
   const handleClick = () => {
@@ -65,4 +66,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default HeaderAnim;

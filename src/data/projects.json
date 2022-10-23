@@ -1,4 +1,14 @@
 [
+  
+    {
+      "header": "Kasa",
+      "background": "/assets/images/kasa.png",
+      "tags": ["School", "React"],
+      "description":
+        "Création d'une API sécurisée pour une application d'avis gastronomiques",
+        "links": ["https://github.com/BenoitDesnos/projet7_OC", "https://projet7opcl.netlify.app" ]
+
+    },
     {
       "header": "Terra-med",
       "background": "/assets/images/terramed.png",
@@ -6,6 +16,42 @@
       "description":
         "Projet pro pour une entreprise de kinésithérapie située dans les pyrénées orientales.",
         "links": ["https://github.com/BenoitDesnos/Kine", "https://terramed.netlify.app/" ]
+
+    },
+    {
+      "header": "Crazy joe",
+      "background": "/assets/images/Crazy-joe.png",
+      "tags": ["School", "Javascript", "Canva", "desktop"],
+      "description":
+        "Projet perso, jeu 2d de course de voiture, pouvez-vous battre mon score? Only desktop",
+        "links": ["https://github.com/BenoitDesnos/Crazy-Joe", "https://app.netlify.com/sites/crazyjoe/settings/general" ]
+
+    },
+    {
+      "header": "Ohmyfood",
+      "background": "/assets/images/Ohmyfood.png",
+      "tags": ["School", "Sass"],
+      "description":
+        "Développement de la partie front-end à l'aide du préprocesseur Sass, dans le respect de la maquette fourni",
+        "links": ["https://github.com/BenoitDesnos/projet2_OC", "https://benoitdesnos.github.io/projet2_OC/" ]
+
+    },
+    {
+      "header": "Kanap",
+      "background": "/assets/images/kanap.png",
+      "tags": ["School", "Javascript"],
+      "description":
+        "Création de la partie front-end d'une site e-commerce.",
+        "links": ["https://github.com/BenoitDesnos/projet5_OC"  ]
+
+    },
+    {
+      "header": "Piquante",
+      "background": "/assets/images/piquante.png",
+      "tags": ["School", "Express", "node.js", "mongoDB", "mongoose"],
+      "description":
+        "Création from scratch d'une plateform de réservation de chambres à des particuliers",
+        "links": ["https://github.com/BenoitDesnos/projet6_OC"  ]
 
     }
 ]

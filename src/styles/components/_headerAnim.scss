@@ -3,11 +3,12 @@
     cursor: pointer;
     opacity: 0;
     animation: fade-down ease-out 1500ms 1000ms forwards, float ease-in-out 4s 2500ms infinite alternate;
+    overflow-y: visible;
 
 
     margin: auto;
     width: 400px;
-    height: 60vh;
+    height: 50vh;
 
     &.animated {
         opacity: 1;
@@ -107,9 +108,10 @@
 
 
 .header__background__postAnim {
+
     overflow-y: visible;
     width: 100%;
-    height: 60vh;
+    height: 50vh;
     position: relative;
 
     &.hidden {
@@ -150,7 +152,7 @@
     .text__hidden {
         color: $color-font-light;
         position: absolute;
-        bottom: 220px;
+        bottom: 100px;
         right: 0;
 
         strong {
@@ -160,7 +162,7 @@
         @include text-reveal;
 
         &.second {
-            bottom: 180px;
+            bottom: 60px;
             right: 0;
             text-align: right;
 

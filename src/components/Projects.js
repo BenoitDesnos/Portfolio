@@ -17,19 +17,21 @@ function Projects() {
               ))}
             </div>
             <p className="projects__item__description">{element.description}</p>
-            {element.links.map((link) => (
-              <a
-                href={link}
-                className="projects__item__links"
-                alt="liens projets"
-              >
-                {link.includes("github") ? (
-                  <i class="fa-brands fa-square-github"></i>
-                ) : (
-                  <i class="fa-light fa-link"></i>
-                )}
-              </a>
-            ))}
+            <div className="project__items__links">
+              {element.links.map((link) => (
+                <a href={link} className="projects__item__link">
+                  {link.includes("github.com") ? (
+                    <a href={link}>
+                      <i class="fa-brands fa-github"></i>
+                    </a>
+                  ) : (
+                    <a href={link}>
+                      <i class="fa-solid fa-link"></i>
+                    </a>
+                  )}
+                </a>
+              ))}
+            </div>
           </div>
         </li>
       ))}
