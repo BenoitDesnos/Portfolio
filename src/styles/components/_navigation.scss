@@ -8,6 +8,10 @@
     @include nav-position;
     z-index: 11;
 
+    @media screen and (min-width: map-get($breakpoints, mobile)) {
+        display: none;
+
+    }
 
     .dots {
         position: absolute;
@@ -33,6 +37,8 @@
             bottom: 10px;
 
         }
+
+
 
         &.is-active {
             width: 1.90rem;
@@ -73,17 +79,9 @@
         transition: z-index 2s;
     }
 
-    .nav__active {
-        color: $color-5;
 
-        transition: all 0.2s;
-    }
 
-    .hover:hover {
-        color: $color-5;
 
-        transition: all 0.2s;
-    }
 
 
 
@@ -101,20 +99,133 @@
         transition: opacity 250ms, transform 250ms, -webkit-transform 250ms;
         border-radius: 0.5rem;
 
+        @media screen and (min-width: map-get($breakpoints, mobile)) {
+            background-color: transparent;
+            min-width: 10rem;
+            overflow: visible;
+
+        }
+
         &.is-active {
             transform: scale(1);
             opacity: 1;
 
         }
 
+        .test {}
+
         li {
             font-size: 20px;
             line-height: 1.2;
             padding: 0.75rem;
+            padding-right: 0px;
             border-bottom: 1px rgba(0, 0, 0, 0.096) solid;
+            position: relative;
+            margin-right: 10px;
 
 
+
+            @media screen and (min-width: map-get($breakpoints, mobile)) {
+                text-align: right;
+                border-bottom: none;
+
+            }
+
+            a {
+                span {
+                    opacity: 1;
+                    color: $color-font-dark;
+                    background-color: transparent;
+
+                    @media screen and (min-width: map-get($breakpoints, mobile)) {
+                        transform: scale(0);
+                    }
+
+                }
+
+                @media screen and (min-width: map-get($breakpoints, mobile)) {
+                    border-radius: 10px;
+                    display: block;
+
+                    &::after {
+                        content: "";
+                        width: 7px;
+                        height: 7px;
+                        background-color: $color-bg-light;
+                        display: block;
+                        position: absolute;
+                        right: -20px;
+                        top: 50%;
+                        border-radius: 50%;
+                        transform: translateY(-2px);
+                        transition: all 0.2s;
+                        transform-origin: center;
+                    }
+
+                    &:hover {
+                        &::after {
+                            transform: translateY(-2px) scale(1.7);
+                            transition: all 0.2s;
+
+                        }
+                    }
+
+                    span {
+                        opacity: 0;
+                        transition: all 0.2s;
+                        color: $color-bg-dark;
+                        margin: 0 auto;
+
+                    }
+
+
+                }
+            }
+
+
+            a.nav__active {
+                @include menu-selected-state
+            }
+
+
+
+            &:hover {
+
+
+                a.nav__active.hover {
+                    @include menu-selected-state;
+                    transition: all 0s;
+                }
+
+                .hover {
+
+
+                    @media screen and (min-width: map-get($breakpoints, mobile)) {
+
+
+                        transition: all 0.2s;
+
+                        span {
+                            color: $color-font-light;
+                            padding: 2px 10px 2px 10px;
+                            border-radius: 20px;
+                            background-color: $color-bg-dark;
+                            opacity: 1;
+
+                            transition: all 0.2s;
+                        }
+
+
+                        &::after {
+
+                            transition: all 0.2s;
+
+
+                        }
+                    }
+                }
+            }
         }
-    }
 
+    }
 }

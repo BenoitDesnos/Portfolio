@@ -5,10 +5,15 @@
     padding-right: $small-gap *0.8;
     flex-direction: column;
     display: flex;
+    position: relative;
 
     @media screen and (min-width: map-get($breakpoints, mobile)) {
         margin: auto;
         width: 70%;
+    }
+
+    @media screen and (min-width: map-get($breakpoints, tablet)) {
+        margin-bottom: $medium-gap;
     }
 
 

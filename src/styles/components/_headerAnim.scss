@@ -8,9 +8,11 @@
     width: 400px;
     height: 60vh;
 
-    @media screen and (min-width: map-get($breakpoints, mobile)) {
-        width: 200px;
-        height: 600px;
+
+    @media screen and (min-width: map-get($breakpoints, tablet)) {
+        position: absolute;
+        top: 250px;
+        z-index: 10;
     }
 
 
@@ -121,6 +123,15 @@
     height: 60vh;
     position: relative;
 
+    @media screen and (min-width: map-get($breakpoints, tablet)) {
+        position: absolute;
+        width: 50%;
+        top: 250px;
+        left: 0%;
+        z-index: 10;
+        margin-left: 12px;
+    }
+
     &.hidden {
         visibility: hidden;
         position: absolute;
@@ -160,7 +171,15 @@
         color: $color-font-light;
         position: absolute;
         bottom: 100px;
+        height: 25px;
         right: 0;
+
+        @media screen and (min-width: map-get($breakpoints, tablet)) {
+            width: 420px;
+            top: 35%;
+
+            right: -200px;
+        }
 
         strong {
             color: $color-2
@@ -172,6 +191,14 @@
             bottom: 60px;
             right: 0;
             text-align: right;
+
+            @media screen and (min-width: map-get($breakpoints, tablet)) {
+                text-align: left;
+                width: 420px;
+                top: 40%;
+                right: -200px;
+
+            }
 
         }
     }

@@ -7,6 +7,10 @@ h1,
     @media screen and (min-width: map-get($breakpoints, mobile)) {
         font-size: map-get($font-size, size1) *1.5;
     }
+
+    @media screen and (min-width: map-get($breakpoints, tablet)) {
+        font-size: map-get($font-size, size1) *1.8;
+    }
 }
 
 h3 {
@@ -16,6 +20,10 @@ h3 {
 
     @media screen and (min-width: map-get($breakpoints, mobile)) {
         font-size: map-get($font-size, size1) *1.5;
+    }
+
+    @media screen and (min-width: map-get($breakpoints, tablet)) {
+        font-size: map-get($font-size, size1) *1.8;
     }
 }
 
@@ -27,4 +35,6 @@ p {
     @media screen and (min-width: map-get($breakpoints, mobile)) {
         font-size: map-get($font-size, size3) *1.2;
     }
+
+
 }

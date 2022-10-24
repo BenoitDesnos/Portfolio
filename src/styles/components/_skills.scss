@@ -3,44 +3,67 @@
     padding-right: $small-gap *0.8;
 
     @media screen and (min-width: map-get($breakpoints, mobile)) {
-        margin-left: 55%;
-        margin-right: 45%;
+        margin-left: 50%;
+        margin-right: 50%;
         transform: translateX(-50%);
         width: 55%;
     }
 
-    .about__item {
-        color: $color-font-light;
-        padding-bottom: $medium-gap;
-        position: relative;
+    @media screen and (min-width: map-get($breakpoints, tablet)) {
+        margin-top: 320px;
+        margin-left: 50%;
+        margin-right: 50%;
+        transform: translateX(-50%);
+        width: 70%;
+    }
 
-        @media screen and (min-width: map-get($breakpoints, mobile)) {
-            margin-bottom: $medium-gap;
-        }
+    ul {
+        display: flex;
+        flex-direction: column;
 
-        .about__item__logo {
-            width: 35px;
+        .about__item {
+            color: $color-font-light;
+            padding-bottom: $medium-gap;
+            position: relative;
 
-            @media screen and (min-width: map-get($breakpoints, mobile)) {
-                position: absolute;
-                left: -70px;
-                top: 3px;
-                width: 50px;
+            &:nth-child(odd) {
+                @media screen and (min-width: map-get($breakpoints, tablet)) {
+                    margin-left: 60%;
+                }
             }
 
-        }
+            @media screen and (min-width: map-get($breakpoints, mobile)) {
+                margin-bottom: $medium-gap;
+            }
 
-        .about__item__header {
+            @media screen and (min-width: map-get($breakpoints, tablet)) {
+                width: 40%;
+            }
 
-            padding-bottom: $small-gap;
-        }
+            .about__item__logo {
+                width: 35px;
+
+                @media screen and (min-width: map-get($breakpoints, mobile)) {
+                    position: absolute;
+                    left: -70px;
+                    top: 3px;
+                    width: 50px;
+                }
+
+            }
+
+            .about__item__header {
+
+                padding-bottom: $small-gap;
+            }
 
 
 
-        .about__item__images {
-            width: 35px;
-            margin-top: $small-gap;
-            margin-right: 5px;
+            .about__item__images {
+                width: 35px;
+                margin-top: $small-gap;
+                margin-right: 5px;
+            }
         }
     }
 }

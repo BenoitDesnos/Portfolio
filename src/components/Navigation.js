@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
-  const [isActive1, setIsActive1] = useState(false);
+  const [isActive1, setIsActive1] = useState(true);
   const [isActive2, setIsActive2] = useState(false);
   const [isActive3, setIsActive3] = useState(false);
 
@@ -30,6 +30,10 @@ function Navigation() {
     }
   }
   useEffect(() => {
+    if (window.innerWidth >= 600) {
+      setIsOpen(true);
+    }
+
     window.addEventListener("scroll", handleScroll);
 
     return () => {
@@ -51,27 +55,27 @@ function Navigation() {
             <a
               href="#1"
               className={isActive1 ? "nav__active hover size3" : "hover size3"}
-              onClick={() => setIsOpen(false)}
+              /* onClick={() => setIsOpen(false)} */
             >
-              Me découvrir
+              <span> Me découvrir </span>
             </a>
           </li>
           <li>
             <a
               href="#2"
               className={isActive2 ? "nav__active hover size3" : "hover size3"}
-              onClick={() => setIsOpen(false)}
+              /* onClick={() => setIsOpen(false)} */
             >
-              Mes projets
+              <span>Mes projets </span>
             </a>
           </li>
           <li>
             <a
               href="#3"
               className={isActive3 ? "nav__active hover size3" : "hover size3"}
-              onClick={() => setIsOpen(false)}
+              /* onClick={() => setIsOpen(false)} */
             >
-              Me Joindre
+              <span> Me Joindre </span>
             </a>
           </li>
         </ul>

@@ -43,6 +43,13 @@
 @mixin nav-position {
     bottom: 20px;
     right: 20px;
+
+    @media screen and (min-width: map-get($breakpoints, mobile)) {
+        bottom: 75%;
+        right: 30px;
+        transform: translateY(50%);
+
+    }
 }
 
 
@@ -55,5 +62,38 @@
 @mixin tablet {
     @media screen and (max-width: map-get($breakpoints, tablet)) {
         @content;
+    }
+}
+
+@mixin menu-selected-state {
+    span {
+        transition: all 0.2s;
+        color: $color-5;
+    }
+
+
+    @media screen and (min-width: map-get($breakpoints, mobile)) {
+        transition: all 0.2s;
+
+        span {
+            opacity: 1;
+            color: $color-5;
+            background-color: $color-bg-dark;
+            padding: 2px 10px 2px 10px;
+            border-radius: 20px;
+            transform: scale(1);
+        }
+
+
+        &::after {
+            background-color: $color-5;
+
+            transform: translateY(-2px) scale(1.7);
+            transition: all 0.2s;
+
+
+
+
+        }
     }
 }

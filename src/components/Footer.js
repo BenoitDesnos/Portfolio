@@ -1,4 +1,11 @@
+import Socials from "./Socials";
+
 function Footer({ logo }) {
+  function builderAnonncer(e) {
+    alert("in building process, thanks for your understanding");
+    e.preventdefault();
+  }
+
   return (
     <footer className="footer">
       <div className="footer__logo">
@@ -7,26 +14,16 @@ function Footer({ logo }) {
       <p className="footer__reserves">© BENDES, all rights reserved</p>
       <ul className="footer__language">
         <li>
-          <a href="/">EN</a>
+          <a href="/" onClick={builderAnonncer}>
+            EN
+          </a>
         </li>
         <span>•</span>
         <li>
           <a href="/"> FR</a>
         </li>
       </ul>
-      <ul className="socials">
-        <li>
-          <a href="/">
-            <i className="fa-brands fa-twitter"></i>
-          </a>
-        </li>
-
-        <li>
-          <a href="/">
-            <i className="fa-brands fa-linkedin-in"></i>
-          </a>
-        </li>
-      </ul>
+      <Socials />
     </footer>
   );
 }

@@ -6,6 +6,7 @@ import Projects from "../components/Projects";
 import { useRef } from "react";
 import Contacts from "../components/Contacts";
 import Footer from "../components/Footer";
+import Socials from "../components/Socials";
 
 function Home() {
   const skills = useRef(null);
@@ -17,6 +18,7 @@ function Home() {
 
   return (
     <main>
+      <Socials />
       <header className="header">
         <img src={logo} alt="BENDES logo" className="header__logo" />
         <div className="header__title" onClick={handleClick}>

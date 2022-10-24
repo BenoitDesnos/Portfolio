@@ -2,7 +2,7 @@
     opacity: 1;
 
     margin: $large-gap 0 $large-gap 0;
-
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -12,6 +12,16 @@
     @media screen and (min-width: map-get($breakpoints, mobile)) {
         width: 60%;
         margin: $large-gap auto $large-gap auto;
+        justify-content: space-evenly;
+
+
+    }
+
+    @media screen and (min-width: map-get($breakpoints, tablet)) {
+        width: 100%;
+        flex-direction: row;
+        margin-bottom: 430px;
+        justify-content: center;
 
     }
 
@@ -22,6 +32,11 @@
         flex-direction: column;
         position: relative;
         width: 90%;
+
+        @media screen and (min-width: map-get($breakpoints, tablet)) {
+            margin-right: $small-gap;
+            width: 35%;
+        }
 
         .grid__info {
             border-bottom: 1px solid black;
@@ -64,12 +79,29 @@
 
         margin: $medium-gap 0 $medium-gap 0;
 
+        @media screen and (min-width: map-get($breakpoints, tablet)) {
+
+            position: absolute;
+            width: 100%;
+            top: 337px;
+
+
+        }
+
+
     }
 
     .contacts__form {
         height: 100%;
         width: 90%;
         overflow: hidden;
+
+        @media screen and (min-width: map-get($breakpoints, tablet)) {
+
+            width: 35%;
+            margin-left: $small-gap;
+        }
+
 
 
 
@@ -129,7 +161,9 @@ form {
 
         }
 
-
+        &.phone-container .form__imgs {
+            width: 13.5%;
+        }
 
         label {
             max-width: 250px;

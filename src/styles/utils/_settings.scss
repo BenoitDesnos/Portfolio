@@ -70,4 +70,8 @@ main {
 
 a {
     color: $color-font-dark;
+
+    @media screen and (min-width: map-get($breakpoints, mobile)) {
+        color: $color-font-light;
+    }
 }
