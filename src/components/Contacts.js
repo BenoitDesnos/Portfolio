@@ -1,7 +1,10 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
+import React from "react";
+import ContactsForm from "./ContactsForm";
+
 function Contacts() {
   return (
-    <section className="contacts contacts--animation" id="3">
+    <section className="contacts contacts--animation">
       <div className="contacts__info">
         <div className="grid__info">
           <h4>ADRESSE</h4>
@@ -54,64 +57,7 @@ function Contacts() {
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
-      <div className="contacts__form">
-        <form id="contact-form">
-          <div className="Name-container form-containers">
-            <div className="form__imgs">
-              <img src="./img/form-name.svg" alt="image" loading="lazy" />
-            </div>
-            <input
-              type="text"
-              autoComplete="off"
-              id="Name"
-              name="user_name"
-              placeholder="Nom / Prénom / Entreprise"
-              required
-            />
-            <div className="form__required">*</div>
-          </div>
-
-          <div className="email-container form-containers">
-            <div className="form__imgs">
-              <img src="./img/form-email.svg" alt="image" loading="lazy" />
-            </div>
-            <input
-              type="email"
-              autoComplete="off"
-              id="Email"
-              placeholder="Email"
-              name="user_mail"
-              required
-            />
-            <div className="form__required">*</div>
-            <span>Email incorrect</span>
-          </div>
-          <div className="phone-container form-containers">
-            <div className="form__imgs">
-              <img src="./img/form-phone.svg" alt="image" loading="lazy" />
-            </div>
-            <input
-              type="tel"
-              autoComplete="off"
-              id="tel"
-              name="user_phone"
-              placeholder="Téléphone"
-            />
-          </div>
-
-          <div className="explications-container form-containers">
-            <textarea
-              name="message"
-              id="explications"
-              rows="10"
-              cols="50"
-              placeholder="Exprimez-vous !"
-            ></textarea>
-            <input type="hidden" name="contact_number" />
-          </div>
-          <input type="submit" value="Valider" />
-        </form>
-      </div>
+      <ContactsForm />
     </section>
   );
 }

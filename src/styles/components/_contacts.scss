@@ -1,6 +1,5 @@
 .contacts {
     opacity: 1;
-
     margin: $large-gap 0 $large-gap 0;
     position: relative;
     display: flex;
@@ -13,8 +12,6 @@
         width: 60%;
         margin: $large-gap auto $large-gap auto;
         justify-content: space-evenly;
-
-
     }
 
     @media screen and (min-width: map-get($breakpoints, tablet)) {
@@ -22,9 +19,7 @@
         flex-direction: row;
         margin-bottom: 430px;
         justify-content: center;
-
     }
-
 
     .contacts__info {
         height: 100%;
@@ -57,11 +52,9 @@
                 color: $color-font-light;
                 transition: 0.3s ease;
 
-
             }
 
             A:hover {
-
                 color: $color-5;
                 transition: 0.3s ease;
 
@@ -76,19 +69,13 @@
     .contacts__map {
         width: 90%;
         height: 400px;
-
         margin: $medium-gap 0 $medium-gap 0;
 
         @media screen and (min-width: map-get($breakpoints, tablet)) {
-
             position: absolute;
             width: 100%;
             top: 337px;
-
-
         }
-
-
     }
 
     .contacts__form {
@@ -97,14 +84,9 @@
         overflow: hidden;
 
         @media screen and (min-width: map-get($breakpoints, tablet)) {
-
             width: 35%;
             margin-left: $small-gap;
         }
-
-
-
-
     }
 }
 
@@ -119,25 +101,19 @@ form {
     row-gap: 20px;
     position: relative;
 
-
-
     .form-containers.explications-container {
         height: 112px;
     }
 
     .form-containers {
-
         display: flex;
         flex-direction: row;
         height: 40px;
         border: 1px solid $color-font-dark;
 
-
-
         .form__imgs {
             position: relative;
             width: 13%;
-
             background-color: darken($color-bg-dark, 20%);
 
             img {
@@ -157,8 +133,6 @@ form {
             justify-content: center;
             align-items: center;
             background-color: darken($color-bg-dark, 20%);
-
-
         }
 
         &.phone-container .form__imgs {
@@ -168,7 +142,6 @@ form {
         label {
             max-width: 250px;
         }
-
 
         input,
         textarea {
@@ -186,13 +159,10 @@ form {
                 font-size: map-get($font-size, basic) * 1.1;
                 letter-spacing: 2px;
             }
-
-
         }
 
         textarea {
             width: 100%;
-
         }
 
         &:nth-child(3)>input {
@@ -212,10 +182,8 @@ form {
 
         input,
         textarea {
-
             &:focus {
                 border: $color-5 solid 1px;
-
                 transition: 0.3s;
             }
         }
@@ -237,7 +205,6 @@ form {
             background-color: darken($color-bg-dark, 10%);
         }
 
-
         .error input {
             color: red;
         }
@@ -247,7 +214,6 @@ form {
             visibility: visible;
             margin-bottom: 0px;
             opacity: 1;
-
         }
     }
 }
@@ -255,7 +221,6 @@ form {
 input[type="submit"] {
     width: 100%;
     height: 20px;
-
     background-color: darken($color-bg-dark, 20%);
     cursor: pointer;
     margin: auto;

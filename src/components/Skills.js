@@ -1,8 +1,8 @@
 import aboutData from "../data/about.json";
-function Skills({ ref }) {
+function Skills() {
   return (
     <section className="about">
-      <ul id="1" ref={ref}>
+      <ul id="1">
         {aboutData.map((element) => (
           <li key={element.header} className="about__item">
             <img

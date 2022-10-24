@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-function Navigation() {
+function Navigation({ useWindowSize }) {
   const [isOpen, setIsOpen] = useState(false);
   const [isActive1, setIsActive1] = useState(true);
   const [isActive2, setIsActive2] = useState(false);
@@ -29,9 +29,19 @@ function Navigation() {
       setIsActive3(false);
     }
   }
-  useEffect(() => {
-    if (window.innerWidth >= 600) {
+  function handleMenu() {
+    if (useWindowSize >= 600) {
       setIsOpen(true);
+      console.log("test");
+    } else {
+      setIsOpen(false);
+    }
+  }
+
+  useEffect(() => {
+    if (useWindowSize >= 600) {
+      setIsOpen(true);
+      console.log("test");
     }
 
     window.addEventListener("scroll", handleScroll);
@@ -39,7 +49,7 @@ function Navigation() {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [useWindowSize]);
 
   return (
     <>
@@ -55,16 +65,16 @@ function Navigation() {
             <a
               href="#1"
               className={isActive1 ? "nav__active hover size3" : "hover size3"}
-              /* onClick={() => setIsOpen(false)} */
+              onClick={handleMenu}
             >
-              <span> Me découvrir </span>
+              <span> Me connaitre </span>
             </a>
           </li>
           <li>
             <a
               href="#2"
               className={isActive2 ? "nav__active hover size3" : "hover size3"}
-              /* onClick={() => setIsOpen(false)} */
+              onClick={handleMenu}
             >
               <span>Mes projets </span>
             </a>
@@ -73,7 +83,7 @@ function Navigation() {
             <a
               href="#3"
               className={isActive3 ? "nav__active hover size3" : "hover size3"}
-              /* onClick={() => setIsOpen(false)} */
+              onClick={handleMenu}
             >
               <span> Me Joindre </span>
             </a>

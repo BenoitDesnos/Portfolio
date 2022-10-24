@@ -26,6 +26,10 @@
             padding-bottom: $medium-gap;
             position: relative;
 
+            &:last-child {
+                padding-bottom: 0;
+            }
+
             &:nth-child(odd) {
                 @media screen and (min-width: map-get($breakpoints, tablet)) {
                     margin-left: 60%;
@@ -34,6 +38,10 @@
 
             @media screen and (min-width: map-get($breakpoints, mobile)) {
                 margin-bottom: $medium-gap;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
             }
 
             @media screen and (min-width: map-get($breakpoints, tablet)) {

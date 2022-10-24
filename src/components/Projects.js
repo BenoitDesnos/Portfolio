@@ -1,7 +1,7 @@
 import projectsData from "../data/projects.json";
 function Projects({ skills }) {
   return (
-    <section id="2" skills={skills}>
+    <section skills={skills}>
       <ul className="projects">
         {projectsData.map((element) => (
           <li key={element.header} className="projects__item">

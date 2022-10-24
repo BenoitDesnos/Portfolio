@@ -24,7 +24,7 @@
       "tags": ["Perso", "Javascript", "Canva", "Desktop"],
       "description":
         "Projet perso, jeu 2d de course de voiture, pouvez-vous battre mon score? Only desktop",
-        "links": ["https://github.com/BenoitDesnos/Crazy-Joe", "https://app.netlify.com/sites/crazyjoe/settings/general" ]
+        "links": ["https://github.com/BenoitDesnos/Crazy-Joe", "https://crazyjoe.netlify.app/" ]
 
     },
     {
