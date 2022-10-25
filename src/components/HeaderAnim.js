@@ -1,3 +1,4 @@
+import { useState } from "react";
 function HeaderAnim() {
   const [animated, setAnimated] = useState(0);
 
