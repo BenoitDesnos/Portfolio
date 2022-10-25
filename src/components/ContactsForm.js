@@ -3,11 +3,11 @@ import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 function ContactsForm() {
   const form = useRef();
-  console.log(form.current);
+
   const sendEmail = (e) => {
     e.preventDefault();
     const formMess = document.querySelector(".form-message");
-    console.log(formMess);
+
     emailjs
       .sendForm(
         process.env.REACT_APP_SERVICE_ID,

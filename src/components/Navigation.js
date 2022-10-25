@@ -10,17 +10,18 @@ function Navigation({ useWindowSize }) {
     const menu2 = document.getElementById("2");
     const menu3 = document.getElementById("3");
 
-    if (menu2.getBoundingClientRect().top >= 5) {
+    if (menu2.getBoundingClientRect().top >= 60) {
       setIsActive1(true);
       setIsActive2(false);
     } else if (
-      menu2.getBoundingClientRect().top < 5 &&
-      menu3.getBoundingClientRect().top >= 5
+      menu2.getBoundingClientRect().top < 60 &&
+      menu3.getBoundingClientRect().top >= 60
     ) {
       setIsActive1(false);
       setIsActive2(true);
       setIsActive3(false);
-    } else if (menu3.getBoundingClientRect().top < 5) {
+    } else if (menu3.getBoundingClientRect().top < 60) {
+      setIsActive1(false);
       setIsActive2(false);
       setIsActive3(true);
     } else {
@@ -32,7 +33,6 @@ function Navigation({ useWindowSize }) {
   function handleMenu() {
     if (useWindowSize >= 600) {
       setIsOpen(true);
-      console.log("test");
     } else {
       setIsOpen(false);
     }
@@ -41,7 +41,6 @@ function Navigation({ useWindowSize }) {
   useEffect(() => {
     if (useWindowSize >= 600) {
       setIsOpen(true);
-      console.log("test");
     }
 
     window.addEventListener("scroll", handleScroll);
