@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 
 function HeaderAnim() {
@@ -9,7 +8,7 @@ function HeaderAnim() {
     setAnimated(() => 1);
     setTimeout(() => {
       setAnimated(() => 2);
-    }, 10000);
+    }, 8000);
   };
   return (
     <>

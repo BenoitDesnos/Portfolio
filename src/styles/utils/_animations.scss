@@ -57,48 +57,79 @@
 @keyframes core-scale {
     from {
         transform: translate(-50%, -50%)scale(1);
-        box-shadow: 0 0 10px 60px #00d9ff21;
+        box-shadow: 0 0 10px 80px #00d9ff21;
     }
 
     to {
         transform: translate(-50%, -50%)scale(0.5);
-        box-shadow: 0 0 10px 0px #00d9ff1c;
+        box-shadow: 0 0 10px 0px #00d9ff21;
+
     }
 }
 
 @keyframes core-explosion {
-    0% {
-        transform: translate(-50%, -50%)scale(1);
+
+
+    50% {
+
+        width: 100px;
+        height: 100px;
+
 
     }
 
-    50% {
-        transform: translate(-50%, -50%)scale(1.5);
+
+
+    54% {
+        width: 100px;
+        height: 100px;
+
 
     }
 
     65% {
-        transform: translate(-50%, -50%)scale(2.5);
+        width: 120px;
+        height: 120px;
+
+
+    }
+
+
+
+    71% {
+        width: 120px;
+        height: 120px;
+
 
     }
 
     92% {
-        transform: translate(-50%, -50%)scale(5);
+        width: 300px;
+        height: 300px;
+
 
     }
 
-    95% {
-        transform: translate(-50%, -50%)scale(0);
+
+    94% {
+        width: 0px;
+        height: 0px;
+
 
     }
 
     98% {
-        transform: translate(-50%, -50%)scale(0);
+        width: 0px;
+        height: 0px;
+
 
     }
 
+
     100% {
-        transform: translate(-50%, -50%)scale(100);
+        width: 2500px;
+        height: 2500px;
+        ;
 
 
     }
@@ -123,27 +154,27 @@
 
 @keyframes float {
     0% {
-        transform: translateY(-0px) rotateZ(0deg)
+        transform: translate(0px, 0px) rotateZ(0deg)
     }
 
     20% {
-        transform: translateY(-10px) rotateZ(-2deg)
+        transform: translate(-10px, 5px) rotateZ(-2deg)
     }
 
     40% {
-        transform: translateY(-0px) rotateZ(4deg)
+        transform: translate(10px, 5px) rotateZ(4deg)
     }
 
     60% {
-        transform: translateY(-10px) rotateZ(-6deg)
+        transform: translate(5px, -5px) rotateZ(-6deg)
     }
 
     80% {
-        transform: translateY(-0px) rotateZ(8deg)
+        transform: translate(0px, 5px) rotateZ(4deg)
     }
 
     100% {
-        transform: translateY(-10px) rotateZ(-10deg)
+        transform: translate(-8px, 0px) rotateZ(-2deg)
     }
 }
 
@@ -152,83 +183,61 @@
         transform: translate(0px, -5px) rotateZ(10deg)
     }
 
-    5% {
+    7% {
         transform: translate(-3px, 20px) rotateZ(-25deg)
     }
 
-    10% {
+    14% {
         transform: translate(3px, -25px) rotateZ(35deg)
     }
 
-    15% {
+    21% {
         transform: translate(6px, 30px) rotateZ(-45deg)
     }
 
-    20% {
+    28% {
         transform: translate(-6px, -35px) rotateZ(65deg)
     }
 
-    25% {
+    35% {
         transform: translate(25px, -35px) rotateZ(1turn)
     }
 
-    30% {
-        transform: translate(-18px, -35px) rotateZ(-2turn)
+    42% {
+        transform: translate(-18px, 35px) rotateZ(-2turn)
     }
 
-    35% {
+    49% {
         transform: translate(35px, -2px) rotateZ(3turn)
     }
 
-    40% {
-        transform: translate(-18px, -15px) rotateZ(-4turn)
+    56% {
+        transform: translate(-18px, 15px) rotateZ(-4turn)
     }
 
-    45% {
-        transform: translate(9px, 35px) rotateZ(5turn)
-    }
-
-    50% {
-        transform: translate(-12px, -23px) rotateZ(-6turn)
-    }
-
-    55% {
-        transform: translate(6px, 40px) rotateZ(7turn)
-    }
-
-    60% {
-        transform: translate(-12px, -25px) rotateZ(-8turn)
-    }
-
-    65% {
-        transform: translate(20px, 15px) rotateZ(9turn)
+    63% {
+        transform: translate(9px, -35px) rotateZ(5turn)
     }
 
     70% {
-        transform: translate(-15px, -35px) rotateZ(-10turn)
+        transform: translate(-12px, -23px) rotateZ(-6turn)
     }
 
-    75% {
-        transform: translate(25px, 20px) rotateZ(11turn)
+    77% {
+        transform: translate(6px, 40px) rotateZ(7turn)
     }
 
-    80% {
-        transform: translate(-9px, -25px) rotateZ(-12turn)
+    84% {
+        transform: translate(-12px, -25px) rotateZ(-8turn)
     }
 
-    85% {
-        transform: translate(12px, 18px) rotateZ(13turn)
-    }
-
-    90% {
-        transform: translate(-25px, -40px) rotateZ(-14turn)
-    }
-
-    95% {
-        transform: translate(9px, 15px) rotateZ(15turn)
+    91% {
+        transform: translate(20px, 15px) rotateZ(9turn)
     }
 
     100% {
-        transform: translate(-9px, -35px) rotateZ(-16turn)
+        transform: translate(-15px, 15px) rotateZ(-10turn)
     }
+
+
 }

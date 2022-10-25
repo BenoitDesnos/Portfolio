@@ -1,9 +1,9 @@
 [
     {
-      "header": "Personnalité",
+      "header": "À propos",
       "logo": "/assets/images/personnality.svg",
       "description":
-        "De part mon expérience conséquente dans la gestion des relations humaines et mon esprit rationnel, je suis en capacité de mener tout projets à son terme.  Mes compétences humaines alliées à ma technicité feront de moi un très bon élément au sein de votre projet/entreprise",
+        "Par mon expérience dans la gestion des relations humaines et mon esprit cartésien, je suis en capacité de mener tous projets à son terme.  Mes compétences humaines alliées à ma technicité feront de moi un très bon élément au sein de votre projet/entreprise",
         "images": null
     },
     {
@@ -17,14 +17,14 @@
       "header": "Préférences",
       "logo": "/assets/images/preferences.svg",
       "description":
-        " La résolution de problématiques etant la raison même de mon attrait pour le developpement, mon appetence et préférence se situe donc évidemment dans l'écriture de fonctions appliquées a des problématiques particulières.",
+        "La résolution de problématiques étant la raison même de mon attrait pour le développement, mon appétence et préférence se situent donc évidemment dans l'écriture de fonctions appliquées à des problématiques particulières.",
         "images": null
     },
     {
       "header": "Technicité",
       "logo": "/assets/images/technicite.svg",
       "description":
-        "Au dela de mes compétences en front-end je suis aussi compétent sur la stack MERN de part ma formation.",
+        "Outre compétences en front-end, je suis aussi compétent sur la stack MERN grâce à ma formation de Développeur Web chez OpenClassrooms.",
         "images": [
           "/assets/images/git.svg",
           "/assets/images/mongodb.svg",

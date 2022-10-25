@@ -19,7 +19,7 @@
 
     &.animated {
         opacity: 1;
-        animation: atom-rotate 10s ease-in-out 1 forwards;
+        animation: atom-rotate 8s ease-in-out 1 forwards;
     }
 
     &.hidden {
@@ -34,12 +34,12 @@
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
-        border-radius: 50%;
+        border-radius: 100%;
         z-index: 10;
         background-color: $color-2;
 
         &.animated {
-            animation: core-scale 1s infinite cubic-bezier(0, .75, .08, 1) alternate, core-explosion 10s infinite linear;
+            animation: core-scale 1s infinite cubic-bezier(0, .75, .08, 1) alternate, core-explosion 8s infinite linear;
         }
 
 
