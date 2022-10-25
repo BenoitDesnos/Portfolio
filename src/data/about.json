@@ -3,7 +3,7 @@
       "header": "À propos",
       "logo": "/assets/images/personnality.svg",
       "description":
-        "Par mon expérience dans la gestion des relations humaines et mon esprit cartésien, je suis en capacité de mener tous projets à son terme.  Mes compétences humaines alliées à ma technicité feront de moi un très bon élément au sein de votre projet/entreprise",
+        "Par mon expérience dans la gestion des relations humaines et mon esprit cartésien, je suis en capacité de mener tous projets à son terme. Mes compétences humaines, alliées à ma technicité feront de moi un très bon élément au sein de votre projet/entreprise.",
         "images": null
     },
     {
@@ -24,7 +24,7 @@
       "header": "Technicité",
       "logo": "/assets/images/technicite.svg",
       "description":
-        "Outre compétences en front-end, je suis aussi compétent sur la stack MERN grâce à ma formation de Développeur Web chez OpenClassrooms.",
+        "Outre mes compétences en front-end, je suis aussi compétent sur la stack MERN grâce à ma formation de Développeur Web chez OpenClassrooms.",
         "images": [
           "/assets/images/git.svg",
           "/assets/images/mongodb.svg",

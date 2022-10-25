@@ -68,7 +68,7 @@
 @mixin menu-selected-state {
     span {
         transition: all 0.2s;
-        color: $color-5;
+        color: $color-2;
     }
 
 
@@ -77,7 +77,7 @@
 
         span {
             opacity: 1;
-            color: $color-5;
+            color: $color-2;
             background-color: $color-bg-dark;
             padding: 2px 10px 2px 10px;
             border-radius: 20px;
@@ -86,7 +86,7 @@
 
 
         &::after {
-            background-color: $color-5;
+            background-color: $color-2;
 
             transform: translateY(-2px) scale(1.7);
             transition: all 0.2s;
