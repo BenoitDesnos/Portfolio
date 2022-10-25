@@ -52,6 +52,15 @@ html {
     scroll-behavior: smooth;
 }
 
+i {
+    transition: all 0.2s;
+
+    &:hover {
+        color: $color-2;
+        transition: all 0.2s;
+    }
+}
+
 body {
     height: auto;
     max-width: 100%;
