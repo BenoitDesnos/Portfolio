@@ -1,13 +1,17 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
-import Skills from "./components/Skills";
+import logo from "./assets/img/logo.svg";
+
+import projectsData from "./data/projects.json";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />}></Route>
-        <Route path="/" element={<Skills />}></Route>
+        <Route
+          path="/"
+          element={<Home logo={logo} projectsData={projectsData} />}
+        ></Route>
       </Routes>
     </BrowserRouter>
   );

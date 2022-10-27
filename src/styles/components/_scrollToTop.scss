@@ -1,0 +1,33 @@
+.scroll__to__top {
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    bottom: 0px;
+    right: -30px;
+    background-color: $color-5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    transform: rotate(45deg);
+    transform-origin: bottom left;
+    opacity: 1;
+    transition: transform 0.3s, opacity 0.3s;
+
+    &.hidden {
+        transform: rotate(90deg);
+        transition: transform 0.3s, opacity 0.3s;
+        opacity: 0;
+
+        i {
+            transform: translateX(-30px) rotate(-90deg);
+            transition: transform 0.3s;
+        }
+    }
+
+
+    i {
+        transform: translateX(-30px) rotate(-45deg);
+        transition: transform 0.3s;
+    }
+}

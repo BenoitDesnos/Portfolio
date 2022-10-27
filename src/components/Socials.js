@@ -7,13 +7,13 @@ function Socials() {
         </a>
       </li>
       <li>
-        <a href="../assets/pdf/CV-BD-2022.pdf">
-          <i className="fa-solid fa-file-lines"></i>
+        <a href="https://github.com/BenoitDesnos">
+          <i className="fa-brands fa-github"></i>
         </a>
       </li>
       <li>
-        <a href="https://twitter.com/benoit_desnos">
-          <i className="fa-brands fa-twitter"></i>
+        <a href="../assets/pdf/CV-BD-2022.pdf">
+          <i className="fa-solid fa-file-lines"></i>
         </a>
       </li>
     </ul>

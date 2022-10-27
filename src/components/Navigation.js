@@ -1,7 +1,8 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useLayoutEffect } from "react";
 
-function Navigation({ useWindowSize }) {
+function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
+  const [size, setSize] = useState(0);
   const [isActive1, setIsActive1] = useState(true);
   const [isActive2, setIsActive2] = useState(false);
   const [isActive3, setIsActive3] = useState(false);
@@ -30,8 +31,18 @@ function Navigation({ useWindowSize }) {
       setIsActive3(false);
     }
   }
+
+  useLayoutEffect(() => {
+    function updateSize() {
+      setSize(window.innerWidth);
+    }
+    window.addEventListener("resize", updateSize);
+    updateSize();
+    return () => window.removeEventListener("resize", updateSize);
+  }, []);
+
   function handleMenu() {
-    if (useWindowSize >= 600) {
+    if (size >= 600) {
       setIsOpen(true);
     } else {
       setIsOpen(false);
@@ -39,7 +50,7 @@ function Navigation({ useWindowSize }) {
   }
 
   useEffect(() => {
-    if (useWindowSize >= 600) {
+    if (size >= 600) {
       setIsOpen(true);
     }
 
@@ -48,11 +59,12 @@ function Navigation({ useWindowSize }) {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [useWindowSize]);
+  }, [size]);
 
   return (
     <>
       <button
+        aria-label="menu"
         onClick={() => (isOpen ? setIsOpen(false) : setIsOpen(true))}
         className="nav__toggle"
       >
@@ -66,7 +78,9 @@ function Navigation({ useWindowSize }) {
               className={isActive1 ? "nav__active hover size3" : "hover size3"}
               onClick={handleMenu}
             >
-              <span> Me connaitre </span>
+              <span className={size < 600 && "change__color"}>
+                Me connaitre
+              </span>
             </a>
           </li>
           <li>
@@ -75,7 +89,7 @@ function Navigation({ useWindowSize }) {
               className={isActive2 ? "nav__active hover size3" : "hover size3"}
               onClick={handleMenu}
             >
-              <span>Mes projets </span>
+              <span className={size < 600 && "change__color"}>Mes projets</span>
             </a>
           </li>
           <li>
@@ -84,7 +98,7 @@ function Navigation({ useWindowSize }) {
               className={isActive3 ? "nav__active hover size3" : "hover size3"}
               onClick={handleMenu}
             >
-              <span> Me Joindre </span>
+              <span className={size < 600 && "change__color"}>Me Joindre</span>
             </a>
           </li>
         </ul>

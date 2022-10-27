@@ -1,57 +1,64 @@
 [
   
     {
+      "id": "klkmcKwNN4",
       "header": "Kasa",
-      "background": "/assets/images/kasa.png",
+      "thumbNail": "/assets/images/kasa.png",      
       "tags": ["School", "React"],
-      "description":
-        "Création from scratch du font-end d'une plateform de réservation de chambres à des particuliers, maquette à l'appui.",
-        "links": ["https://github.com/BenoitDesnos/projet7_OC", "https://projet7opcl.netlify.app" ]
+      "shortDescription":
+      "Création from scratch du font-end d'une plateform de réservation de chambres à des particuliers, maquette à l'appui.",    
+      "links": ["https://github.com/BenoitDesnos/projet7_OC", "https://projet7opcl.netlify.app", "https://www.figma.com/file/bAnXDNqRKCRRP8mY2gcb5p/UI-Design-Kasa-FR?node-id=3%3A0" ]
 
     },
+    
     {
-      "header": "Terra-med",
-      "background": "/assets/images/terramed.png",
-      "tags": ["Pro", "En production","React" ],
-      "description":
-        "Projet pro pour une entreprise de kinésithérapie située dans les pyrénées orientales.",
-        "links": ["https://github.com/BenoitDesnos/Kine", "https://terramed.netlify.app/" ]
-
-    },
-    {
-      "header": "Crazy joe",
-      "background": "/assets/images/Crazy-joe.png",
-      "tags": ["Perso", "Javascript", "Canva", "Desktop"],
-      "description":
-        "Projet perso, jeu 2d de course de voiture, pouvez-vous battre mon score? Only desktop",
-        "links": ["https://github.com/BenoitDesnos/Crazy-Joe", "https://crazyjoe.netlify.app/" ]
-
-    },
-    {
-      "header": "Ohmyfood",
-      "background": "/assets/images/Ohmyfood.png",
-      "tags": ["School", "Sass"],
-      "description":
-        "Développement de la partie front-end à l'aide du préprocesseur Sass, dans le respect de la maquette fourni",
-        "links": ["https://github.com/BenoitDesnos/projet2_OC", "https://benoitdesnos.github.io/projet2_OC/" ]
-
-    },
-    {
-      "header": "Kanap",
-      "background": "/assets/images/kanap.png",
-      "tags": ["School", "Javascript"],
-      "description":
-        "Création de la partie front-end d'une site e-commerce.",
-        "links": ["https://github.com/BenoitDesnos/projet5_OC"  ]
-
-    },
-    {
+      "id": "ntEmfKWiIj",
       "header": "Piquante",
-      "background": "/assets/images/piquante.png",
-      "tags": ["School", "Express", "node.js", "mongoDB", "mongoose"],
-      "description":
-        "Création d'une API sécurisée pour une application d'avis gastronomiques",
-        "links": ["https://github.com/BenoitDesnos/projet6_OC"  ]
+      "thumbNail": "/assets/images/piquante.png",      
+      "tags": ["School", "Express", "node.js", "mongoDB", "mongoose"],     "shortDescription":
+      "Création d'une API sécurisée pour une application d'avis gastronomiques",      
+      "links": ["https://github.com/BenoitDesnos/projet6_OC" , "/videos/piquante-video.mp4" ]
+
+    }
+    ,
+    {
+      "id": "RQOk7IruAf",
+      "header": "Crazy joe",
+      "thumbNail": "/assets/images/Crazy-joe.png",
+      "tags": ["Perso", "Javascript", "Canva", "Desktop"],
+      "shortDescription":
+      "Projet perso, jeu 2d de course de voiture, pouvez-vous battre mon score? Only desktop",      
+      "links": ["https://github.com/BenoitDesnos/Crazy-Joe", "https://crazyjoe.netlify.app/" ]
+
+    },
+    {
+      "id": "uHWw_dblIZ",
+      "header": "Ohmyfood",
+      "thumbNail": "/assets/images/Ohmyfood.png",
+      "tags": ["School", "Sass"],
+      "shortDescription":
+      "Développement de la partie front-end à l'aide du préprocesseur Sass, dans le respect de la maquette fourni",
+      "links": ["https://github.com/BenoitDesnos/projet2_OC", "https://benoitdesnos.github.io/projet2_OC/", "/maquettes/Ohmyfood.zip" ]
+    },
+    {
+      "id": "Ag_fKvzoqF",
+      "header": "Kanap",
+      "thumbNail": "/assets/images/kanap.png",
+      "video": "/videos/kanap-video.mp4",
+      "tags": ["School", "Javascript", "e-commerce"],
+      "shortDescription":
+      "Création de la partie front-end d'une site e-commerce.",      
+      "links": ["https://github.com/BenoitDesnos/projet5_OC" ,"/videos/kanap-video.mp4" ]
+
+    },
+    {
+      "id": "rTulsHmQLs",
+      "header": "Terra-med",
+      "thumbNail": "/assets/images/terramed.png",
+      "tags": ["Pro", "En production","React" ],
+      "shortDescription":
+      "Projet pro pour une entreprise de kinésithérapie située dans les pyrénées orientales.",      
+      "links": ["https://github.com/BenoitDesnos/Kine", "https://terramed.netlify.app/" ]
 
     }
 ]
