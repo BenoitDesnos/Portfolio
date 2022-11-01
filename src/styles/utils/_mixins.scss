@@ -41,8 +41,8 @@
 }
 
 @mixin nav-position {
-    bottom: 65px;
-    right: 5px;
+    bottom: 35px;
+    right: 30px;
 
     @media screen and (min-width: map-get($breakpoints, mobile)) {
         bottom: 75%;
