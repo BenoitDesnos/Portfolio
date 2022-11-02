@@ -7,7 +7,7 @@ function HeaderAnim() {
     setAnimated(() => 1);
     setTimeout(() => {
       setAnimated(() => 2);
-    }, 8000);
+    }, 7950);
   };
   return (
     <>

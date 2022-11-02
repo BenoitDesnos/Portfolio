@@ -19,7 +19,7 @@
 
     &.animated {
         opacity: 1;
-        animation: atom-rotate 8s ease-in-out 1 forwards;
+        animation: atom-rotate 8000ms ease-in-out 1 forwards;
     }
 
     &.hidden {
@@ -39,7 +39,7 @@
         background-color: $color-2;
 
         &.animated {
-            animation: core-scale 1s infinite cubic-bezier(0, .75, .08, 1) alternate, core-explosion 8s infinite linear;
+            animation: core-scale 1000ms cubic-bezier(0, .75, .08, 1) 8 alternate, core-explosion 8000ms 1 linear;
         }
 
 
