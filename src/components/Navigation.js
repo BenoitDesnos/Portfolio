@@ -78,7 +78,7 @@ function Navigation() {
               className={isActive1 ? "nav__active hover size3" : "hover size3"}
               onClick={handleMenu}
             >
-              <span className={size < 600 && "change__color"}>
+              <span className={size < 600 ? "change__color" : ""}>
                 Me connaitre
               </span>
             </a>
@@ -89,7 +89,9 @@ function Navigation() {
               className={isActive2 ? "nav__active hover size3" : "hover size3"}
               onClick={handleMenu}
             >
-              <span className={size < 600 && "change__color"}>Mes projets</span>
+              <span className={size < 600 ? "change__color" : ""}>
+                Mes projets
+              </span>
             </a>
           </li>
           <li>
@@ -98,7 +100,9 @@ function Navigation() {
               className={isActive3 ? "nav__active hover size3" : "hover size3"}
               onClick={handleMenu}
             >
-              <span className={size < 600 && "change__color"}>Me Joindre</span>
+              <span className={size < 600 ? "change__color" : ""}>
+                Me Joindre
+              </span>
             </a>
           </li>
         </ul>

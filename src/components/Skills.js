@@ -1,10 +1,38 @@
 import aboutData from "../data/about.json";
+import { /* useAnimation */ motion } from "framer-motion";
+/* import { useInView } from "react-intersection-observer"; */
+
 function Skills() {
+  const visible = {
+    opacity: 1,
+    x: 0,
+    transition: {
+      duration: 1,
+    },
+  };
+
+  const right = {
+    hidden: { opacity: 0, x: 100 },
+    visible,
+  };
+  const left = {
+    hidden: { opacity: 0, x: -100 },
+    visible,
+  };
+
   return (
     <section className="about">
       <ul id="1">
-        {aboutData.map((element) => (
-          <li key={element.header} className="about__item">
+        {aboutData.map((element, index) => (
+          <motion.li
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 0.3 }}
+            variants={index % 2 ? left : right}
+            key={element.header}
+            className="about__item"
+          >
             <img
               src={element.logo}
               alt="decor d'item"
@@ -21,7 +49,7 @@ function Skills() {
                   alt="compétences"
                 />
               ))}
-          </li>
+          </motion.li>
         ))}
       </ul>
     </section>

@@ -5,9 +5,7 @@ export default function ScrollToTop() {
   function handleScroll() {
     if (window.scrollY < 30) {
       setShowButton(false);
-      console.log(showButton);
     } else {
-      console.log(true);
       setShowButton(true);
     }
   }
