@@ -1,8 +1,8 @@
-import { useState, useEffect, useLayoutEffect } from "react";
+import { useState, useEffect } from "react";
 
-function Navigation() {
+function Navigation({ size }) {
   const [isOpen, setIsOpen] = useState(false);
-  const [size, setSize] = useState(0);
+
   const [isActive1, setIsActive1] = useState(true);
   const [isActive2, setIsActive2] = useState(false);
   const [isActive3, setIsActive3] = useState(false);
@@ -31,15 +31,6 @@ function Navigation() {
       setIsActive3(false);
     }
   }
-
-  useLayoutEffect(() => {
-    function updateSize() {
-      setSize(window.innerWidth);
-    }
-    window.addEventListener("resize", updateSize);
-    updateSize();
-    return () => window.removeEventListener("resize", updateSize);
-  }, []);
 
   function handleMenu() {
     if (size >= 600) {

@@ -2,7 +2,15 @@ import aboutData from "../data/about.json";
 import { /* useAnimation */ motion } from "framer-motion";
 /* import { useInView } from "react-intersection-observer"; */
 
-function Skills() {
+function Skills({ size }) {
+  function handleAnim(index) {
+    if (window.innerWidth >= 1000) {
+      return index % 2 > 0 ? left : right;
+    } else {
+      return left;
+    }
+  }
+
   const visible = {
     opacity: 1,
     x: 0,
@@ -28,8 +36,7 @@ function Skills() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ duration: 0.3 }}
-            variants={index % 2 ? left : right}
+            variants={handleAnim(index)}
             key={element.header}
             className="about__item"
           >

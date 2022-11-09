@@ -1,8 +1,10 @@
 .about {
     padding-left: $small-gap *0.8;
     padding-right: $small-gap *0.8;
+    margin-top: 150px;
 
     @media screen and (min-width: map-get($breakpoints, mobile)) {
+
         margin-left: 50%;
         margin-right: 50%;
         transform: translateX(-50%);
@@ -10,7 +12,7 @@
     }
 
     @media screen and (min-width: map-get($breakpoints, tablet)) {
-        margin-top: 320px;
+        margin-top: 350px;
         margin-left: 50%;
         margin-right: 50%;
         transform: translateX(-50%);

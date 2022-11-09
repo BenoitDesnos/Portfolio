@@ -7,7 +7,7 @@ import Footer from "../components/Footer";
 import Socials from "../components/Socials";
 import ScrollToTop from "../components/ScrollToTop";
 
-function Home({ logo, projectsData }) {
+function Home({ logo, projectsData, size }) {
   return (
     <main>
       <Socials />
@@ -26,7 +26,7 @@ function Home({ logo, projectsData }) {
       <div className="separator" id="3"></div>
       <Contacts />
       <Footer logo={logo} />
-      <Navigation />
+      <Navigation size={size} />
       <ScrollToTop />
     </main>
   );
