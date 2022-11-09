@@ -1,7 +1,6 @@
 .projects {
     overflow: scroll;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
+
     overflow-y: visible;
     display: flex;
     flex-wrap: nowrap;
@@ -46,7 +45,7 @@
 
 
     .projects__item {
-        scroll-snap-align: center;
+
         display: flex;
         flex: 1 0 auto;
         flex-direction: column;
