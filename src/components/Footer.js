@@ -2,7 +2,7 @@ import Socials from "./Socials";
 
 function Footer({ logo }) {
   function builderAnonncer(e) {
-    alert("in building process, thanks for your understanding");
+    alert("in building process, thank you for your understanding");
     e.preventdefault();
   }
 
@@ -14,7 +14,7 @@ function Footer({ logo }) {
       <p className="footer__reserves">© BENDES, all rights reserved</p>
       <ul className="footer__language">
         <li>
-          <a href="/" onClick={builderAnonncer}>
+          <a href="/en" onClick={builderAnonncer}>
             EN
           </a>
         </li>

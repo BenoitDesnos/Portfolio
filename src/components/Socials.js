@@ -4,8 +4,8 @@ function Socials() {
   const drop = {
     hidden: { opacity: 0, y: -100 },
 
-    visible: (i) => {
-      const delay = i;
+    visible: (custom) => {
+      const delay = custom;
       return {
         opacity: 1,
         y: 0,

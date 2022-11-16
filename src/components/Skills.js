@@ -1,8 +1,7 @@
-import aboutData from "../data/about.json";
 import { /* useAnimation */ motion } from "framer-motion";
 /* import { useInView } from "react-intersection-observer"; */
 
-function Skills({ size }) {
+function Skills({ aboutData }) {
   function handleAnim(index) {
     if (window.innerWidth >= 1000) {
       return index % 2 > 0 ? left : right;

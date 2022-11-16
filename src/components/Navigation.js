@@ -44,9 +44,7 @@ function Navigation({ size }) {
     if (size >= 600) {
       setIsOpen(true);
     }
-
     window.addEventListener("scroll", handleScroll);
-
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };

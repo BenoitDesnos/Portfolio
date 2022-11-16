@@ -7,7 +7,8 @@ import Footer from "../components/Footer";
 import Socials from "../components/Socials";
 import ScrollToTop from "../components/ScrollToTop";
 
-function Home({ logo, projectsData, size }) {
+function Home({ logo, projectsData, size, aboutData }) {
+  console.log(window.location.pathname);
   return (
     <main>
       <Socials />
@@ -20,7 +21,7 @@ function Home({ logo, projectsData, size }) {
         <HeaderAnim />
       </header>
 
-      <Skills />
+      <Skills aboutData={aboutData} />
       <div className="separator" id="2"></div>
       <Projects projectsData={projectsData} />
       <div className="separator" id="3"></div>

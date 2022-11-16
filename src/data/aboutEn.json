@@ -1,0 +1,37 @@
+[
+    {
+      "header": "About me",
+      "logo": "/assets/images/personnality.svg",
+      "description":
+        "Through my experience in the management of human relations and my cartesian mind, I am able to carry out all kind of projects to completion. My human skills, combined with my technicality will mark me as a very good element within your project/company.",
+        "images": null
+    },
+    {
+      "header": "Expertise",
+      "logo": "/assets/images/expertise.svg",
+      "description":
+        "Specialized in front end development, I have HTML, CSS and vanilla Javascript skills. I use the React library as well as the Sass pre-processor in priority.",
+        "images": null
+    },
+    {
+      "header": "Preferences",
+      "logo": "/assets/images/preferences.svg",
+      "description":
+        "The problem solving component being the very reason of my interest in development, my appetite and preference are therefore in the writing of functions to answer particular needs.",
+        "images": null
+    },
+    {
+      "header": "Technicity",
+      "logo": "/assets/images/technicite.svg",
+      "description":
+        "In addition to my front-end skills, I am also competent on the MERN stack thanks to my training as a Web Developer at OpenClassrooms.",
+        "images": [
+          "/assets/images/git.svg",
+          "/assets/images/mongodb.svg",
+          "/assets/images/express.svg",
+          "/assets/images/react.svg",
+          "/assets/images/node.svg"
+         		
+        ]
+    }
+  ]

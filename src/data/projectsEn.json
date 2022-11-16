@@ -1,0 +1,64 @@
+[
+  
+    {
+      "id": "klkmcKwNN4",
+      "header": "Kasa",
+      "thumbNail": "/assets/images/kasa.png",      
+      "tags": ["School", "React"],
+      "shortDescription":
+      "Front-end interface of an AirBnb like site built from scratch.",    
+      "links": ["https://github.com/BenoitDesnos/projet7_OC", "https://projet7opcl.netlify.app", "https://www.figma.com/file/bAnXDNqRKCRRP8mY2gcb5p/UI-Design-Kasa-FR?node-id=3%3A0" ]
+
+    },
+    
+    {
+      "id": "ntEmfKWiIj",
+      "header": "Piquante",
+      "thumbNail": "/assets/images/piquante.png",      
+      "tags": ["School", "Express", "node.js", "mongoDB", "mongoose"],     "shortDescription":
+      "Creation of a secure API for a food reviews app",      
+      "links": ["https://github.com/BenoitDesnos/projet6_OC" , "/videos/piquante-video.mp4" ]
+
+    }
+    ,
+    {
+      "id": "RQOk7IruAf",
+      "header": "Crazy joe",
+      "thumbNail": "/assets/images/Crazy-joe.png",
+      "tags": ["Perso", "Javascript", "Canva", "Desktop"],
+      "shortDescription":
+      "Personnal project, 2D game of a racing car, can you beat me?",      
+      "links": ["https://github.com/BenoitDesnos/Crazy-Joe", "https://crazyjoe.netlify.app/" ]
+
+    },
+    {
+      "id": "uHWw_dblIZ",
+      "header": "Ohmyfood",
+      "thumbNail": "/assets/images/Ohmyfood.png",
+      "tags": ["School", "Sass"],
+      "shortDescription":
+      "Development of the front-end part using the Sass preprocessor, with respect of the model provided",
+      "links": ["https://github.com/BenoitDesnos/projet2_OC", "https://benoitdesnos.github.io/projet2_OC/", "/maquettes/Ohmyfood.zip" ]
+    },
+    {
+      "id": "Ag_fKvzoqF",
+      "header": "Kanap",
+      "thumbNail": "/assets/images/kanap.png",
+      "video": "/videos/kanap-video.mp4",
+      "tags": ["School", "Javascript", "e-commerce"],
+      "shortDescription":
+      "Front-end interface of an E-commerce app, built with vanilla js.",      
+      "links": ["https://github.com/BenoitDesnos/projet5_OC" ,"/videos/kanap-video.mp4" ]
+
+    },
+    {
+      "id": "rTulsHmQLs",
+      "header": "Terra-med",
+      "thumbNail": "/assets/images/terramed.png",
+      "tags": ["Pro", "En production","React" ],
+      "shortDescription":
+      "Professional project for a physiotherapy company located in les pyrénées orientales, still in production.",      
+      "links": ["https://github.com/BenoitDesnos/Kine", "https://terramed.netlify.app/" ]
+
+    }
+]
