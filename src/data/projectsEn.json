@@ -10,13 +10,23 @@
       "links": ["https://github.com/BenoitDesnos/projet7_OC", "https://projet7opcl.netlify.app", "https://www.figma.com/file/bAnXDNqRKCRRP8mY2gcb5p/UI-Design-Kasa-FR?node-id=3%3A0" ]
 
     },
+    {
+      "id": "rTulsHmQLs",
+      "header": "testHub",
+      "thumbNail": "/assets/images/testHub.png",
+      "tags": ["In prod","Team","React", "desktop only" ],
+      "shortDescription":
+      "this project has for main purpose to display our capacity to work as a team and build simple functionnalities with js/jsx/react algorithm.",      
+      "links": ["https://github.com/BenoitDesnos/TestHub", "https://test-hub.netlify.app/" ]
+
+    },
     
     {
       "id": "ntEmfKWiIj",
       "header": "Piquante",
       "thumbNail": "/assets/images/piquante.png",      
-      "tags": ["School", "Express", "node.js", "mongoDB", "mongoose"],     "shortDescription":
-      "Creation of a secure API for a food reviews app",      
+      "tags": ["School", "Express", "node.js", "mongoDB", "mongoose"],     
+      "shortDescription":"Creation of a secure API for a food reviews app",      
       "links": ["https://github.com/BenoitDesnos/projet6_OC" , "/videos/piquante-video.mp4" ]
 
     }

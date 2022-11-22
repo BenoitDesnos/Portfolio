@@ -10,6 +10,16 @@
       "links": ["https://github.com/BenoitDesnos/projet7_OC", "https://projet7opcl.netlify.app", "https://www.figma.com/file/bAnXDNqRKCRRP8mY2gcb5p/UI-Design-Kasa-FR?node-id=3%3A0" ]
 
     },
+    {
+      "id": "rTulsHmQLs",
+      "header": "testHub",
+      "thumbNail": "/assets/images/testHub.png",
+      "tags": ["En production","Team","React", "desktop only" ],
+      "shortDescription":
+      "Projet ayant pour but de montrer ma capacité à travailler en équipe et de construire différentes fonctionnalités sous forme de tests de rapidité, de mémoire et plus encore",      
+      "links": ["https://github.com/BenoitDesnos/TestHub", "https://test-hub.netlify.app/" ]
+
+    },
     
     {
       "id": "ntEmfKWiIj",
@@ -50,15 +60,6 @@
       "Création de la partie front-end d'une site e-commerce.",      
       "links": ["https://github.com/BenoitDesnos/projet5_OC" ,"/videos/kanap-video.mp4" ]
 
-    },
-    {
-      "id": "rTulsHmQLs",
-      "header": "Terra-med",
-      "thumbNail": "/assets/images/terramed.png",
-      "tags": ["Pro", "En production","React" ],
-      "shortDescription":
-      "Projet pro pour une entreprise de kinésithérapie située dans les pyrénées orientales.",      
-      "links": ["https://github.com/BenoitDesnos/Kine", "https://terramed.netlify.app/" ]
-
     }
+  
 ]
